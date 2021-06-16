@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.junit.practice.MathUtilTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.033 s <<< FAILURE! - in com.junit.practice.MathUtilTest
+testDivision  Time elapsed: 0.011 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: This may throw arithemetic exception ==> Expected java.lang.ArithmeticException to be thrown, but nothing was thrown.
+	at com.junit.practice.MathUtilTest.testDivision(MathUtilTest.java:32)
+
