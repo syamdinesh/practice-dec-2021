@@ -25,9 +25,9 @@ public class MathUtilTest {
 		Assert.assertEquals(314.1592653589793238, MathUtil.computeCircleRadius(10), "Should return right circle area");
 	}
 
-//	@Test
-//	void testDivision() {
-//		Assert.assertEquals(ArithmeticException.class, () -> MathUtil.division(1, 2),
-//				"This may throw arithemetic exception");
-//	}
+	@Test
+	void testDivision() {
+		Assert.assertEquals(ArithmeticException.class,MathUtil.division(1, 2),
+				"This may throw arithemetic exception");
+	}
 }
