@@ -20,7 +20,7 @@ public class StreamApi {
             Stream<String> sm= Stream.of("Syam","Syamala","Revanth");
 
 //            The third method signature is used when we are dealing with different types
-            String s=sm.parallel().reduce("Bayyana ",(ss,p)->ss+" ".concat(p+", "),(s1,s2)->s1.concat(s2));
+            String s=sm.parallel().reduce("Bayyana ",(ss,p)->ss+" ".concat(p+", "), String::concat);
             logger.info("reduced string:- "+s);
 //            int stringLength=sm.parallel().reduce(0,(ss,p)->ss+p.length(),(s1,s2)->s1+s2);
 //            logger.info("reduced string:- "+stringLength);
