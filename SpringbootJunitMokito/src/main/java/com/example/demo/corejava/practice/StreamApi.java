@@ -33,10 +33,10 @@ public class StreamApi {
 //            logger.info("This is joining method usage:---------------------"+collect1);
 //            Files.write(Paths.get("C:\\Users\\syamd\\OneDrive\\Desktop\\edo1.txt"), collect1.getBytes());
 
-            Customer customerName = new Customer("Syam");
-            List<Product> listOfProducts = Arrays.asList(new Product("Coffee"), new Product("Tea"));
-            Order orderObject = new Order(customerName, LocalDate.of(2021, 06, 30), listOfProducts);
-            orderObject.
+//            Customer customerName = new Customer("Syam");
+//            List<Product> listOfProducts = Arrays.asList(new Product("Coffee"), new Product("Tea"));
+//            Order orderObject = new Order(customerName, LocalDate.of(2021, 06, 30), listOfProducts);
+//            orderObject.
 
 //            Stream<String> sm= Stream.of("Syam","Syamala","Revanth","Narayana","Ashwath");
 //            The third method signature is used when we are dealing with different types
