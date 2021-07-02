@@ -8,7 +8,7 @@ public class ExceptionPractice {
         Base b=new Derived();
         try {
             b.print();
-        }catch (FileNotFoundException e){
+        }catch (IOException e){
             System.out.print("AWE");
         }finally {
             System.out.print("SOME");
