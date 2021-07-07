@@ -1,5 +1,5 @@
 Data Structures:-
-    1. Program-->  A program is set of instructions which performs operation on data--> When the program is dealing with data how it will organize the data in the main memory that's where Data Structure is used.
+    1. Program-->  A program is set of instructions which performs certain operations on data--> When the program is dealing with data how it will organize the data in the main memory that's where Data Structure is used.
     2. A Data Structure is a way of organizing and hold data in some manner so later it can be accessed, queried or updated easily and quickly.
 
 Algorithm:-
@@ -13,9 +13,10 @@ How to define good code?
     2. Scalable :- Time complexity --> Amount of time it takes to run an algorithm
                    Space or memory complexity--> Amount of extra space our algorithm requires.
 
-Big O notation rates the which is the best solution ( a problem has multiple solutions. ).
+Big O notation rates which is the best out of all possible solutions.
 
-BIG O--> This notation is used to describe the performance or complexity of an algorithm.
+BIG O Notation
+    is used to describe the performance or complexity of an algorithm.
          Big O is used to describe the execution time required or the space used by an algorithm.
          To measure the efficiency of an algorithm, we need to consider two things:
             Time complexity:- How much time does it take to run completely?
