@@ -18,6 +18,17 @@ public class ExceptionPractice {
 //        }finally {
 //            System.out.print("SOME");
 //        }
+        Buyable []arr=new Buyable[5];
+        for (Buyable buy:arr) {
+            System.out.println("Buyable object:- "+buy.salePercentage);
+            System.out.println("Buyable object:- "+buy.salePercentage);
+        }
+
+        Book[] booksArray=new Book[2];
+        for (Book book:booksArray) {
+            System.out.println("Book object:- "+book.salePercentage);
+            System.out.println("Book object:- "+book.salePercentage);
+        }
     }
 }
 
