@@ -1,16 +1,16 @@
 Data Structures:-
-    1. Program-->  A program is set of instructions which performs operation on data--> When the program is dealing wiht data how it will organize the data in the main memory that's where Data Structure is used.
+    1. Program-->  A program is set of instructions which performs operation on data--> When the program is dealing with data how it will organize the data in the main memory that's where Data Structure is used.
     2. A Data Structure is a way of organizing and hold data in some manner so later it can be accessed, queried or updated easily and quickly.
 
 Algorithm:-
-    A process or set of steps to do a cetain task.
-        eg:-  Search Algo--> Process or set of steps to search.
-              Sort Algo--> Process or set of steps to sort in a praticular sequence.
+    A process or set of steps to do certain tasks,
+        eg:-  Search Algorithm--> Process or set of steps to search.
+              Sort Algorithm--> Process or set of steps to sort in a particular sequence.
     Algorithms are performed on data structure.
 
 How to define good code?
     1. Readable
-    2. Scalable :- Time coplexity --> Amount of time it takes to run an algorithm
+    2. Scalable :- Time complexity --> Amount of time it takes to run an algorithm
                    Space or memory complexity--> Amount of extra space our algorithm requires.
 
 Big O notation rates the which is the best solution ( a problem has multiple solutions. ).
