@@ -1,0 +1,22 @@
+SpringBoot - we can create projects using spring initializer.
+             https://start.spring.io/
+REST API- Representational State Transfer Application Program interface.
+          REST is a style of software architecture for distributed hypermedia systems.
+Hyper Text Transfer Protocol (HTTP)
+HTTP methods- GET, PUT, POST, DELETE.
+HTTP Status codes- 200, 404.
+
+Key Abstraction-Resource
+A resource has an URI (Uniform Resource Identifier)
+    -> /users/Ranga/todos/1
+    -> /users/Ranga/todos
+    -> /users/Ranga
+A resource can have different representations
+    -> XML
+    -> HTML
+    -> JSON
+    examples:-
+    -> Create a User - Post /users
+    -> Delete a User - DELETE /users/1
+    -> Get all Users - GET /users
+    -> Get one User - GET /users/1
