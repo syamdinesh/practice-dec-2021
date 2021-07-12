@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.java.springboot_practice.springboot_practice;
+package com.java.springboot_practice;
 
 import lombok.Getter;
 import lombok.Setter;

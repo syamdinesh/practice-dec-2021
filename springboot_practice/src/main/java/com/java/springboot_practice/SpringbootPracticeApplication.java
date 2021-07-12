@@ -1,4 +1,4 @@
-package com.java.springboot_practice.springboot_practice;
+package com.java.springboot_practice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,4 @@ public class SpringbootPracticeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootPracticeApplication.class, args);
 	}
-
 }
