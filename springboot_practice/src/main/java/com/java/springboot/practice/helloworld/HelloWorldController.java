@@ -41,8 +41,7 @@ public class HelloWorldController {
 	/**
 	 * get method path_parameter example
 	 */
-	/* produces = MediaType. APPLICATION_JSON_VALUE */
-	@GetMapping(path = "/hello-world-bean/path-variable/{name}", produces = "application/json")
+	@GetMapping(path = "/hello-world-bean/path-variable/{name}")
 	public HelloWorldBean HelloWorldBean(@PathVariable String name) {
 		return new HelloWorldBean(String.format("Hello World %s", name));
 	}
@@ -50,7 +49,7 @@ public class HelloWorldController {
 	/**
 	 * get method path_parameter example
 	 */
-	@GetMapping(path = "/user-bean/path-variable/{flag}"/* produces = MediaType.APPLICATION_JSON_VALUE */)
+	@GetMapping(path = "/user-bean/path-variable/{flag}")
 	public List<String> userBean(@PathVariable boolean flag) {
 		return userDAO.userDaoService(flag);
 	}

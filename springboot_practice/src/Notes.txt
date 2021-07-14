@@ -22,3 +22,8 @@ A resource can have different representations
     -> Get one User - GET /users/1
 @ControllerAdvise - it's applicable to all the controllers defined in project when use this annotation at customized exception.
 	Eg:- when extend ResponseEntityExceptionHandler there you can use this annotation.
+	
+Observations	
+	1.package names should match with src/main/java with others
+	2.controller paths shouldn't match with other methods or endpoints.  
+	
