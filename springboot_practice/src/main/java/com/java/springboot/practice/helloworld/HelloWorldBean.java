@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.java.springboot_practice;
+package com.java.springboot.practice.helloworld;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -16,6 +16,7 @@ import lombok.ToString;
 @ToString
 public class HelloWorldBean {
 
+	@SuppressWarnings("unused")
 	private String message;
 
 	/**

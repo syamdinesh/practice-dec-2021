@@ -1,11 +1,16 @@
 /**
  * 
  */
-package com.java.springboot_practice;
+package com.java.springboot.practice.helloworld;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.java.springboot.practice.dao.UserDAO;
 
 /**
  * @author syamd
@@ -13,6 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloWorldController {
+
+	@Autowired
+	private UserDAO userDAO;
 
 	/**
 	 * get method to return hello world
@@ -25,7 +33,7 @@ public class HelloWorldController {
 	/**
 	 * get method bean example
 	 */
-	@GetMapping(path = "/hello-world-bean"/* produces = MediaType.APPLICATION_JSON_VALUE */)
+	@GetMapping(path = "/hello-world-bean") /**/
 	public HelloWorldBean HelloWorldBean() {
 		return new HelloWorldBean("Hello World");
 	}
@@ -33,8 +41,17 @@ public class HelloWorldController {
 	/**
 	 * get method path_parameter example
 	 */
-	@GetMapping(path = "/hello-world-bean/path-variable/{name}"/* produces = MediaType.APPLICATION_JSON_VALUE */)
+	/* produces = MediaType. APPLICATION_JSON_VALUE */
+	@GetMapping(path = "/hello-world-bean/path-variable/{name}", produces = "application/json")
 	public HelloWorldBean HelloWorldBean(@PathVariable String name) {
 		return new HelloWorldBean(String.format("Hello World %s", name));
+	}
+
+	/**
+	 * get method path_parameter example
+	 */
+	@GetMapping(path = "/user-bean/path-variable/{flag}"/* produces = MediaType.APPLICATION_JSON_VALUE */)
+	public List<String> userBean(@PathVariable boolean flag) {
+		return userDAO.userDaoService(flag);
 	}
 }

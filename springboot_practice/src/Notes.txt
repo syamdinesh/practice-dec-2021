@@ -20,3 +20,5 @@ A resource can have different representations
     -> Delete a User - DELETE /users/1
     -> Get all Users - GET /users
     -> Get one User - GET /users/1
+@ControllerAdvise - it's applicable to all the controllers defined in project when use this annotation at customized exception.
+	Eg:- when extend ResponseEntityExceptionHandler there you can use this annotation.
