@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.java.springboot.practice.dao.UserDAO;
+import com.java.springboot.practice.dao.UserDaoService;
 
 /**
  * @author syamd
@@ -20,7 +20,7 @@ import com.java.springboot.practice.dao.UserDAO;
 public class HelloWorldController {
 
 	@Autowired
-	private UserDAO userDAO;
+	private UserDaoService userDao;
 
 	/**
 	 * get method to return hello world
@@ -51,6 +51,6 @@ public class HelloWorldController {
 	 */
 	@GetMapping(path = "/user-bean/path-variable/{flag}")
 	public List<String> userBean(@PathVariable boolean flag) {
-		return userDAO.userDaoService(flag);
+		return userDao.userDaoService(flag);
 	}
 }
