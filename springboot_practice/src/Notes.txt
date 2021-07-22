@@ -2,6 +2,32 @@ SpringBoot - we can create projects using spring initializer.
              https://start.spring.io/
 REST API- Representational State Transfer Application Program interface.
           REST is a style of software architecture for distributed hypermedia systems.
+     
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> What is REST? <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+     	is an architecture style, not a standard
+     	Everything is a Resource
+     	Resource identification through URI
+     	  - Uniform interface- fixed set for CRUD operations
+     	  - Accessed by HTTP methods
+     	Resources are decoupled from their representation
+     	  - Rest uses various representations to represent a resource, e.g JSON or XML
+     	in Rest architecture 
+     	  - Web services use HTTP methods to implement the concept of REST architecture.
+     	  - Rest Server simply provides access to resources
+     	  - Rest client accesses and modifies the resources like text, JSON , XML>
+     	Web services based on REST architecture are called RESTful web services. 
+     
+>>>>>>>>>>>>>>>>>>>>>>> What is REST architecture ? <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+        * State-less client-server architecture
+            - REST server simply provides access to resources.
+            - Rest client accesses and modifies the resources.
+            - RESTful web services should not keep a client state on server
+            - Responsibility of the client to pass its context to server.
+        * Use HTTP methods to implement the concept of REST architecture.
+        * Stateful interactions through hyperlinks
+            - Every interaction with a resource is stateless
+            - Stateful interactions are based on the concept of explicit state transfer. 
+          
 Hyper Text Transfer Protocol (HTTP)
 HTTP methods- GET, PUT, POST, DELETE.
 HTTP Status codes- 200, 404.
