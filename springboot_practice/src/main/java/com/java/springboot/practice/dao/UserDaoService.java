@@ -43,9 +43,12 @@ public class UserDaoService {
 	}
 
 	public User save(User userObject) {
-		if (userObject.getId() == null) {
-			userObject.setId(++usersCount);
-		}
+		Integer id = userObject.getId();
+		usersList.forEach(user -> {
+			if (user.getId().equals(id) || id == null) {
+				userObject.setId(++usersCount);
+			}
+		});
 		usersList.add(userObject);
 		return userObject;
 	}
@@ -56,6 +59,7 @@ public class UserDaoService {
 
 	public List<User> deleteOne(int id) {
 		if (usersList.removeIf(s -> s.getId() == id)) {
+			usersCount = usersList.size();
 			return usersList;
 		}
 		return null;
