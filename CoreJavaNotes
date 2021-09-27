@@ -1,0 +1,8 @@
+Use stream operations to express sophisticated data processing queries.
+First, typical processing patterns on collections
+Second, how can we process really large collections efficiently? Ideally, to speed up the processing, you want to leverage multicore architectures. However, writing parallel code is hard and error-prone.
+Java SE 8 to the rescue! The Java API designers are updating the API with a new abstraction called Stream that lets you process data in a declarative way. Furthermore, streams can leverage multi-core architectures without you having to write a single line of multithread code. Sounds good, doesn’t it? That’s what this series of articles will explore.
+
+
+References
+https://www.oracle.com/technical-resources/articles/java/ma14-java-se-8-streams.html
