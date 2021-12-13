@@ -14,9 +14,12 @@ Combiner – a function used to combine the partial result of the reduction oper
 
 When a stream executes in parallel, the Java runtime splits the stream into multiple substreams. In such cases, we need to use a function to combine the results of the substreams into a single one. This is the role of the combiner.
 
-
+----------------
+Serialization
+----------------
 Serialization :- is a process of writing objects from memory into a stream.
 De-serialization :- is a process of reading objects from the stream. Data is serailized in a binary form.
+This mechanism is used to persist the object.
 Serializable ID:- The sender and receiver must have the same SerialVersionUID, otherwise, InvalidClassException will be thrown when you deserialize the object.
 
 Java Serialization with Inheritance (IS-A Relationship)
@@ -24,6 +27,25 @@ If a class implements Serializable interface then all its sub classes will also 
 
 Java Serialization with Aggregation (HAS-A Relationship)
 If a class has a reference to another class, all the references must be Serializable otherwise serialization process will not be performed. In such case, NotSerializableException is thrown at runtime.
+
+All the objects within an object must be Serializable.
+
+Java Serialization with the static data member
+If there is any static data member in a class, it will not be serialized because static is the part of class not object.
+
+Java Serialization with array or collection
+Rule: In case of array or collection, all the objects of array or collection must be serializable. If any object is not serialiizable, serialization will be failed.
+
+Externalizable in java
+The Externalizable interface provides the facility of writing the state of an object into a byte stream in compress format. It is not a marker interface.
+
+Java Transient Keyword
+If you don't want to serialize any data member of a class, you can mark it as transient.
+
+Serializable is a marker interface (has no data member and method). It is used to "mark" Java classes so that the objects of these classes may get a certain capability. The Cloneable and Remote are also marker interfaces.
+
+Advantages of Java Serialization
+It is mainly used to travel object's state on the network (that is known as marshalling).
 
 References
 https://www.oracle.com/technical-resources/articles/java/ma14-java-se-8-streams.html
