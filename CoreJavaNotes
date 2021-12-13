@@ -15,7 +15,8 @@ Combiner – a function used to combine the partial result of the reduction oper
 When a stream executes in parallel, the Java runtime splits the stream into multiple substreams. In such cases, we need to use a function to combine the results of the substreams into a single one. This is the role of the combiner.
 
 
-Serialization :- 
+Serialization :- is a process of writing objects from memory into a stream.
+De-serialization :- is a process of reading objects from the stream.
 Serializable ID:- The sender and receiver must have the same SerialVersionUID, otherwise, InvalidClassException will be thrown when you deserialize the object.
 
 References
