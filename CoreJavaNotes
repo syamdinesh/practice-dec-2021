@@ -15,6 +15,9 @@ Combiner – a function used to combine the partial result of the reduction oper
 When a stream executes in parallel, the Java runtime splits the stream into multiple substreams. In such cases, we need to use a function to combine the results of the substreams into a single one. This is the role of the combiner.
 
 
+Serialization :- 
+Serializable ID:- The sender and receiver must have the same SerialVersionUID, otherwise, InvalidClassException will be thrown when you deserialize the object.
+
 References
 https://www.oracle.com/technical-resources/articles/java/ma14-java-se-8-streams.html
 https://www.baeldung.com/java-stream-reduce
