@@ -19,6 +19,12 @@ Serialization :- is a process of writing objects from memory into a stream.
 De-serialization :- is a process of reading objects from the stream. Data is serailized in a binary form.
 Serializable ID:- The sender and receiver must have the same SerialVersionUID, otherwise, InvalidClassException will be thrown when you deserialize the object.
 
+Java Serialization with Inheritance (IS-A Relationship)
+If a class implements Serializable interface then all its sub classes will also be serializable.
+
+Java Serialization with Aggregation (HAS-A Relationship)
+If a class has a reference to another class, all the references must be Serializable otherwise serialization process will not be performed. In such case, NotSerializableException is thrown at runtime.
+
 References
 https://www.oracle.com/technical-resources/articles/java/ma14-java-se-8-streams.html
 https://www.baeldung.com/java-stream-reduce
