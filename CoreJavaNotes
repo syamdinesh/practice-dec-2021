@@ -19,7 +19,7 @@ Serialization
 ----------------
 Serialization :- is a process of writing objects from memory into a stream.
 De-serialization :- is a process of reading objects from the stream. Data is serailized in a binary form.
-This mechanism is used to persist the object.
+This mechanism is used to persist/save the object.
 The byte stream created is platform independent. So, the object serialized on one platform can be deserialized on a different platform.
 
 To make a Java object serializable we implement the java.io.Serializable interface.
