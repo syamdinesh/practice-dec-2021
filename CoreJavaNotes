@@ -16,7 +16,7 @@ When a stream executes in parallel, the Java runtime splits the stream into mult
 
 
 Serialization :- is a process of writing objects from memory into a stream.
-De-serialization :- is a process of reading objects from the stream.
+De-serialization :- is a process of reading objects from the stream. Data is serailized in a binary form.
 Serializable ID:- The sender and receiver must have the same SerialVersionUID, otherwise, InvalidClassException will be thrown when you deserialize the object.
 
 References
