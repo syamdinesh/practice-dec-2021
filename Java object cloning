@@ -1,0 +1,2 @@
+Shallow copy - it copies reference of original object. Eg:- intArr1[]= intArr2[]; (if you modifies this array inbetween {3, 7, 9} ->{13, 7 ,9}).
+Deep copy - it creates a new object with exact data. Eg:- {3, 7, 9} -> {3, 7, 9}. 
