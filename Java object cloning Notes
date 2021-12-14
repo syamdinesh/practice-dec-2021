@@ -7,3 +7,10 @@ Deep copy - it creates a new object with exact data. Eg:- {3, 7, 9} -> {3, 7, 9}
 There is no hard and fast rule defined for selecting between shallow copy and deep copy 
 but normally we should keep in mind that if an object has only primitive fields, then obviously we should go for shallow copy,
 but if the object has references to other objects, then based on the requirement, shallow copy or deep copy should be done.
+
+----------
+Lazy Copy 
+----------
+A lazy copy can be defined as a combination of both shallow copy and deep copy. The mechanism follows a simple approach – at the initial state, 
+shallow copy approach is used. A counter is also used to keep a track on how many objects share the data. When the program wants to modify the original object, 
+it checks whether the object is shared or not. If the object is shared, then the deep copy mechanism is initiated.
