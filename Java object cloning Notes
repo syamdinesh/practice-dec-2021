@@ -20,3 +20,8 @@ Summary
 --------
 In shallow copy, only fields of primitive data type are copied while the objects references are not copied. 
 Deep copy involves the copy of primitive data type as well as object references. There is no hard and fast rule as to when to do shallow copy and when to do a deep copy.
+
+
+
+References
+https://www.geeksforgeeks.org/deep-shallow-lazy-copy-java-examples/
