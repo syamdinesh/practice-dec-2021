@@ -1,2 +1,9 @@
 Shallow copy - it copies reference of original object. Eg:- intArr1[]= intArr2[]; (if you modifies this array inbetween {3, 7, 9} ->{13, 7 ,9}).
 Deep copy - it creates a new object with exact data. Eg:- {3, 7, 9} -> {3, 7, 9}. 
+
+-------------------
+ when to use what
+------------------
+There is no hard and fast rule defined for selecting between shallow copy and deep copy 
+but normally we should keep in mind that if an object has only primitive fields, then obviously we should go for shallow copy,
+but if the object has references to other objects, then based on the requirement, shallow copy or deep copy should be done.
