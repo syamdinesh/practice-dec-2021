@@ -1,0 +1,5 @@
+toString():- toString() provides String representation of an Object and used to convert an object to String. 
+             The default toString() method for class Object returns a string consisting of the name of the class of which the object is an instance, 
+             the at-sign character `@’, and the unsigned hexadecimal representation of the hash code of the object.
+             It is always recommended to override toString() method to get our own String representation of Object.
+hashCode():- 
