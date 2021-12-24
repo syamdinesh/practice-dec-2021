@@ -2,4 +2,8 @@ toString():- toString() provides String representation of an Object and used to 
              The default toString() method for class Object returns a string consisting of the name of the class of which the object is an instance, 
              the at-sign character `@’, and the unsigned hexadecimal representation of the hash code of the object.
              It is always recommended to override toString() method to get our own String representation of Object.
-hashCode():- 
+hashCode():- 1. For every object, JVM generates a unique number which is hascode. 
+             2. A common misconception about this method is that hashCode() method returns the address of object,which is not correct.It converts the internal address of object to an integer by using an algorithm.
+             3. The hashCode() method is native because in Java it is impossible to find address of an object, so it uses native languages like C/C++ to find address of the object.
+             4. Use of hashCode() method : Returns a hash value that is used to search object in a collection. JVM (Java Virtual Machine) uses hashcode method while saving objects into hashing related data structures like HashSet, HashMap, Hashtable etc. 
+                The main advantage of saving objects based on hash code is that searching becomes easy. 
